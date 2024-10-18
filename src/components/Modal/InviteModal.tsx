@@ -15,9 +15,9 @@ export const InviteModal = ({
 
   return (
     <Modal open centered={false} size="tiny" onClose={closeInviteModal}>
-      <Modal.Header as="h3">Invite friends and watch together!</Modal.Header>
+      <Modal.Header as="h3" style={{ fontFamily: 'fonts' }}>ชวนเพื่อนและร่วมรับชมไปด้วยกัน</Modal.Header>
       <Modal.Content>
-        <Header as="h5">Copy and share this link:</Header>
+        <Header as="h5">คัดลอกและแชร์ลิ้งก์นี้:</Header>
         <Input
           fluid
           readOnly
@@ -25,14 +25,14 @@ export const InviteModal = ({
             color: 'teal',
             labelPosition: 'right',
             icon: 'copy',
-            content: 'Copy',
+            content: 'copy',            
             onClick: handleCopyInviteLink,
           }}
           defaultValue={window.location.href}
         />
         {inviteLinkCopied && (
           <div style={{ marginTop: 15 }}>
-            <b style={{ color: 'green' }}>Link copied to clipboard.</b>
+            <b style={{ color: 'green' }}>ลิ้งก์คัดลอกไปยังคลิปบอร์ด</b>
           </div>
         )}
       </Modal.Content>

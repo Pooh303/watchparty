@@ -58,7 +58,7 @@ export const UserMenu = ({
           />
           {isChatMessage && (
             <Button
-              content="Delete Message"
+              content="ลบข้อความ"
               icon="comment"
               onClick={async () => {
                 const token = await user?.getIdToken();
@@ -73,7 +73,7 @@ export const UserMenu = ({
             />
           )}
           <Button
-            content="Delete User's Messages"
+            content="ลบข้อความของผู้ใช้"
             icon="comments"
             onClick={async () => {
               const token = await user?.getIdToken();

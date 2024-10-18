@@ -12,8 +12,8 @@ export const Home = () => {
     <div>
       <div className={styles.container}>
         <Hero
-          heroText={'Watch videos together with friends anywhere.'}
-          subText={'No registration or download required.'}
+          heroText={'ดูวิดีโอด้วยกันกับเพื่อน ๆ ได้ทุกที่'}
+          subText={'ไม่ต้องลงทะเบียนหรือดาวน์โหลด'}
           action={
             <div style={{ marginTop: '8px', width: '300px' }}>
               <NewRoomButton size="huge" />
@@ -31,27 +31,27 @@ export const Home = () => {
           <Feature
             icon="sync"
             title="Synchronized Play"
-            text="Starts, stops, and seeks are synchronized to everyone, so take those restroom and snack breaks without worrying about falling behind."
+            text="การเริ่มหยุดและเลื่อนวิดีโอจะซิงค์ให้ตรงกันกับทุกคน"
           />
           <Feature
             icon="conversation"
             title="Chat"
-            text="Chat with others in your room. Memes and inside jokes encouraged."
+            text="แชทกับคนอื่นได้ในห้องของคุณ"
           />
           <Feature
             icon="list"
-            title="Playlists"
-            text="Set up a whole list of videos to play next, and rearrange to your heart's content."
+            title="Queues"
+            text="ลำดับคิววีดีโอได้หลายรายการ"
           />
           <Feature
             icon="video"
             title="Video chat"
-            text="Jump into video chat if you'd rather be face-to-face."
+            text="เข้าร่วมวิดีโอแชทและคุยแบบเห็นหน้า"
           />
         </div>
         <Hero
-          heroText={'React to moments together.'}
-          subText={"Find moments of shared joy even when you're apart."}
+          heroText={'แสดงความรู้สึกร่วมกันในทุกช่วงเวลา'}
+          subText={"ค้นหาช่วงเวลาแห่งความสุขร่วมกันได้ แม้จะอยู่ห่างไกลกัน"}
           image={'/screenshot18.png'}
           color="green"
         />
@@ -64,34 +64,34 @@ export const Home = () => {
         <div className={styles.featureSection}>
           <Feature
             icon="desktop"
-            title={`VBrowser`}
-            text="Watch together on a virtual browser running in the cloud."
+            title={`VirtualBrowser`}
+            text="เบราว์เซอร์เสมือนที่รันบนคลาวด์"
           />
           <Feature
             icon="youtube"
             title={`YouTube`}
-            text="Watch videos together from YouTube."
+            text="ดูวิดีโอด้วยกันจาก YouTube"
           />
           <Feature
             icon="slideshare"
             title={`Screensharing`}
-            text="Share a browser tab or your desktop."
+            text="แชร์แท็บหรือหน้าจอของคุณ"
           />
           <Feature
             icon="file"
             title={`File`}
-            text="Upload and stream your own file."
+            text="อัปโหลดและสตรีมไฟล์ของคุณ"
           />
           <Feature
             icon="linkify"
             title={`URL`}
-            text="Paste in a video URL for everyone to watch from."
+            text="รองรับ URL ของวิดีโอเพื่อให้ทุกคนสามารถดูได้"
           />
         </div>
         <Hero
-          heroText={'Theater mode.'}
+          heroText={'โหมดภาพยนตร์'}
           subText={
-            'Bring video and chat front-and-center for minimal distractions.'
+            'วิดีโอและแชทมาอยู่ตรงกลางเพื่อให้มีสิ่งรบกวน้อยที่สุด'
           }
           image={'/screenshot14.png'}
         />
@@ -104,14 +104,14 @@ export const Home = () => {
             alignItems: 'center',
           }}
         >
-          <div className={styles.heroText}>Get started!</div>
+          <div className={styles.heroText}>เริ่มต้น</div>
           <div className={styles.featureSection}>
             <Step.Group style={{ margin: '8px' }}>
               <Step>
                 <Icon name="certificate" />
                 <Step.Content>
                   <Step.Title>1.</Step.Title>
-                  <Step.Description>Make a room</Step.Description>
+                  <Step.Description>สร้างห้อง</Step.Description>
                 </Step.Content>
               </Step>
 
@@ -119,7 +119,7 @@ export const Home = () => {
                 <Icon name="group" />
                 <Step.Content>
                   <Step.Title>2.</Step.Title>
-                  <Step.Description>Share link with friends</Step.Description>
+                  <Step.Description>แชร์ลิงก์กับเพื่อน</Step.Description>
                 </Step.Content>
               </Step>
 
@@ -127,7 +127,7 @@ export const Home = () => {
                 <Icon name="film" />
                 <Step.Content>
                   <Step.Title>3.</Step.Title>
-                  <Step.Description>Pick something to watch</Step.Description>
+                  <Step.Description>เลือกสิ่งที่จะดู</Step.Description>
                 </Step.Content>
               </Step>
 
@@ -135,7 +135,7 @@ export const Home = () => {
                 <Icon name="thumbs up outline" />
                 <Step.Content>
                   <Step.Title>4.</Step.Title>
-                  <Step.Description>Success!</Step.Description>
+                  <Step.Description>สำเร็จ!</Step.Description>
                 </Step.Content>
               </Step>
             </Step.Group>

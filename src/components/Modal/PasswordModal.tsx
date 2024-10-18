@@ -22,7 +22,7 @@ export const PasswordModal = ({
   return (
     <Modal inverted="true" basic open>
       <Header as="h1" style={{ textAlign: 'center' }}>
-        This room requires a password.
+        ห้องนี้ต้องการรหัสผ่าน
       </Header>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <Input

@@ -151,17 +151,17 @@ export const SettingsTab = ({
           closeModal={() => setPermModalOpen(false)}
         ></PermanentRoomModal>
       )}
-      <div className="sectionHeader">Room Settings</div>
+      <div className="sectionHeader">การตั้งค่าห้อง</div>
       {!user && (
         <Message color="yellow" size="tiny">
-          You need to be signed in to change these settings.
+          คุณต้องลงชื่อเข้าใช้เพื่อเปลี่ยนการตั้งค่าเหล่านี้
         </Message>
       )}
       <SettingRow
         toggle
         icon={roomLock ? 'lock' : 'lock open'}
-        name={`Lock Room`}
-        description="Only the person who locked the room can control the video."
+        name={`ล็อกห้อง`}
+        description="เฉพาะผู้ที่ล็อกห้องเท่านั้นที่สามารถควบคุมวิดีโอได้"
         checked={Boolean(roomLock)}
         disabled={disableLocking && disableOwning}
         onChange={(_e, data) => setRoomLock(Boolean(data.checked))}
@@ -170,9 +170,9 @@ export const SettingsTab = ({
         <SettingRow
           toggle
           icon={'clock'}
-          name={`Make Room Permanent`}
+          name={`ทำให้ห้องเป็นถาวร`}
           description={
-            'Prevent this room from expiring. This also unlocks additional room features.'
+            'ป้องกันห้องนี้ไม่ให้หมดอายุ'
           }
           helpIcon={
             <Icon
@@ -187,14 +187,14 @@ export const SettingsTab = ({
         />
       }
       {owner && owner === user?.uid && (
-        <div className="sectionHeader">Admin Settings</div>
+        <div className="sectionHeader">ตั้งค่าแอดมิน</div>
       )}
       {owner && owner === user?.uid && (
         <SettingRow
           toggle={false}
           icon={'key'}
-          name={`Set Room Password`}
-          description="Users must know this password in order to join the room."
+          name={`ตั้งค่ารหัสผ่านของห้อง`}
+          description="ผู้ใช้จำเป็นต้องใช้รหัสผ่านในการเข้าถึง"
           content={
             <Input
               value={password ?? ''}
@@ -233,8 +233,8 @@ export const SettingsTab = ({
         <SettingRow
           toggle
           icon={'i cursor'}
-          name={`Disable Chat`}
-          description="Prevent users from sending messages in chat."
+          name={`ปิดการใช้งานแชท`}
+          description="ผู้ใช้ไม่สามารถส่งข้อความในช่องแชทได้"
           checked={Boolean(isChatDisabled)}
           disabled={false}
           onChange={(_e, data) => {
@@ -247,8 +247,8 @@ export const SettingsTab = ({
         <SettingRow
           toggle={false}
           icon={'trash'}
-          name={`Clear Chat`}
-          description="Delete all existing chat messages"
+          name={`ลบแชท`}
+          description="ลบข้อความทั้งหมด"
           disabled={false}
           content=" "
           rightContent={
@@ -414,8 +414,8 @@ export const SettingsTab = ({
         toggle
         updateTS={updateTS}
         icon="bell"
-        name="Disable chat notification sound"
-        description="Don't play a sound when a chat message is sent while you're on another tab"
+        name="ปิดเสียงแจ้งเตือน"
+        description="ปิดเสียงการแจ้งเตือนในขณะที่ยังส่งข้อความ"
         checked={Boolean(getCurrentSettings().disableChatSound)}
         disabled={false}
         onChange={(_e, data) => {

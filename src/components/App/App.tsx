@@ -2254,14 +2254,14 @@ export default class App extends React.Component<AppProps, AppState> {
                                   }}
                                 >
                                   <Icon name="globe" />
-                                  บราวเซอร์จำลอง
+                                  เบราว์เซอร์จำลอง
                                 </Button>
                               }
                             />
                           )}
                         {this.playingVBrowser() && (
                           <Popup
-                            content="Choose the person controlling the VBrowser"
+                            content="เลือกบุคคลที่ควบคุม VBrowser"
                             trigger={
                               <Dropdown
                                 icon="keyboard"
@@ -2270,7 +2270,7 @@ export default class App extends React.Component<AppProps, AppState> {
                                 style={{ height: '36px' }}
                                 button
                                 value={this.state.controller}
-                                placeholder="No controller"
+                                placeholder="ไม่มีคนควบคุม"
                                 clearable
                                 onChange={this.changeController}
                                 selection
@@ -2442,7 +2442,7 @@ export default class App extends React.Component<AppProps, AppState> {
                               <Dimmer active>
                                 <Loader>
                                   {this.playingVBrowser()
-                                    ? 'Launching virtual browser. This can take up to a minute.'
+                                    ? 'กำลังเปิดเบราว์เซอร์เสมือน อาจใช้เวลานานถึงหนึ่งนาที'
                                     : ''}
                                 </Loader>
                               </Dimmer>
@@ -2461,8 +2461,8 @@ export default class App extends React.Component<AppProps, AppState> {
                                 <Message
                                   color="red"
                                   icon="frown"
-                                  header="It doesn't look like this is a media file!"
-                                  content="Maybe you meant to launch a VBrowser if you're trying to visit a web page?"
+                                  header="ดูเหมือนว่านี่จะไม่ใช่ไฟล์มีเดีย!"
+                                  content="คุณอาจตั้งใจเปิด VBrowser หากคุณกำลังพยายามเยี่ยมชมหน้าเว็บ?"
                                 />
                               )}
                           </div>

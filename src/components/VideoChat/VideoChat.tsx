@@ -261,9 +261,10 @@ export class VideoChat extends React.Component<VideoChatProps> {
               icon
               labelPosition="left"
               onClick={this.setupWebRTC}
+              style={{ fontFamily: 'fonts' }}
             >
               <Icon name="video" />
-              {`Join Video Chat`}
+              {`เข้าร่วมวิดีโอแชท`}
             </Button>
           </div>
         )}
@@ -281,9 +282,10 @@ export class VideoChat extends React.Component<VideoChatProps> {
               icon
               labelPosition="left"
               onClick={this.stopWebRTC}
+              style={{ fontFamily: 'fonts' }}
             >
               <Icon name="external" />
-              {`Leave Video Chat`}
+              {`ออกจากวีดีแชท`}
             </Button>
             <div
               style={{
@@ -300,9 +302,10 @@ export class VideoChat extends React.Component<VideoChatProps> {
                 icon
                 labelPosition="left"
                 onClick={this.toggleVideoWebRTC}
+                style={{ fontFamily: 'fonts' }}
               >
                 <Icon name="video" />
-                {this.getVideoWebRTC() ? 'On' : 'Off'}
+                {this.getVideoWebRTC() ? 'เปิด' : 'ปิด'}
               </Button>
               <Button
                 color={this.getAudioWebRTC() ? 'green' : 'red'}
@@ -311,13 +314,14 @@ export class VideoChat extends React.Component<VideoChatProps> {
                 icon
                 labelPosition="left"
                 onClick={this.toggleAudioWebRTC}
+                style={{ fontFamily: 'fonts' }}
               >
                 <Icon
                   name={
                     this.getAudioWebRTC() ? 'microphone' : 'microphone slash'
                   }
                 />
-                {this.getAudioWebRTC() ? 'On' : 'Off'}
+                {this.getAudioWebRTC() ? 'เปิด' : 'ปิด'}
               </Button>
             </div>
           </div>

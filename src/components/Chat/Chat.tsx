@@ -155,7 +155,7 @@ export class Chat extends React.Component<ChatProps> {
     if (cmd === 'host') {
       return (
         <React.Fragment>
-          {`changed the video to `}
+          {`เปลี่ยนวิดีโอเป็น: `}
           <span style={{ textTransform: 'initial' }}>
             {this.props.getMediaDisplayName(msg)}
           </span>
@@ -164,28 +164,28 @@ export class Chat extends React.Component<ChatProps> {
     } else if (cmd === 'playlistAdd') {
       return (
         <React.Fragment>
-          {`added to the playlist: `}
+          {`เพิ่มลงในคิว: `}
           <span style={{ textTransform: 'initial' }}>
             {this.props.getMediaDisplayName(msg)}
           </span>
         </React.Fragment>
       );
     } else if (cmd === 'seek') {
-      return `jumped to ${
+      return `ข้ามไปที่ ${
         this.props.isLiveStream
           ? formatTimestamp(msg, true)
           : formatTimestamp(msg)
       }`;
     } else if (cmd === 'play') {
-      return `started the video at ${formatTimestamp(msg)}`;
+      return `เริ่มวิดีโอที่ ${formatTimestamp(msg)}`;
     } else if (cmd === 'pause') {
-      return `paused the video at ${formatTimestamp(msg)}`;
+      return `หยุดวิดีโอที่ ${formatTimestamp(msg)}`;
     } else if (cmd === 'playbackRate') {
-      return `set the playback rate to ${msg === '0' ? 'auto' : `${msg}x`}`;
+      return `ตั้งความเร็วตัวเล่น ${msg === '0' ? 'อัตโนมัติ' : `${msg}x`}`;
     } else if (cmd === 'lock') {
-      return `locked the room`;
+      return `ล็อคห้อง`;
     } else if (cmd === 'unlock') {
-      return 'unlocked the room';
+      return 'ปลดล็อคห้อง';
     } else if (cmd === 'vBrowserTimeout') {
       return (
         <React.Fragment>
@@ -263,7 +263,7 @@ export class Chat extends React.Component<ChatProps> {
                 margin: '0 auto',
               }}
             >
-              <Icon name='arrow circle down'></Icon>Jump to bottom
+              <Icon name='arrow circle down'></Icon>ไปที่ด้านล่าง
             </Button>
           )}
         </div>
@@ -331,8 +331,8 @@ export class Chat extends React.Component<ChatProps> {
             disabled={this.props.isChatDisabled}
             placeholder={
               this.props.isChatDisabled
-                ? 'The chat was disabled by the room owner.'
-                : 'Enter a message...'
+                ? 'แชทถูกปิดการใช้งานโดยเจ้าของห้อง'
+                : 'พิมพ์ข้อความ . . .'
             }
           >
             <input />
@@ -351,7 +351,7 @@ export class Chat extends React.Component<ChatProps> {
               style={{ opacity: 1 }}
             >
               <span role="img" aria-label="Emoji">
-                😀
+                🍿
               </span>
             </Icon>
             {/* <Icon onClick={this.sendChatMsg} name="send" inverted circular link /> */}

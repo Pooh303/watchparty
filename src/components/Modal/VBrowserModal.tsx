@@ -59,6 +59,7 @@ export class VBrowserModal extends React.Component<{
       return (
         <Button
           color={large ? 'orange' : undefined}
+          style={{ fontFamily: 'fonts' }}
           onClick={async () => {
             const rcToken =
               executeRecaptcha && (await executeRecaptcha('launchVBrowser'));
@@ -69,7 +70,7 @@ export class VBrowserModal extends React.Component<{
             closeModal();
           }}
         >
-          {large ? 'Launch VBrowser+' : 'Continue with Free'}
+          {large ? 'เปิดใช้งานเบราว์เซอร์เสมือน +' : 'เปิดใช้งานเบราว์เซอร์เสมือน'}
         </Button>
       );
     };
@@ -101,13 +102,14 @@ export class VBrowserModal extends React.Component<{
         useRecaptchaNet
       >
         <Modal open={true} onClose={closeModal}>
-          <Modal.Header>Launch a VBrowser</Modal.Header>
+          <Modal.Header style={{ fontFamily: 'fonts' }}>เริ่มเบราว์เซอร์จำลอง</Modal.Header>
           <Modal.Content image>
             <Modal.Description>
               <div>
-                You're about to launch a virtual browser to share in this room.
+              คุณกำลังจะแสดงเบราว์เซอร์เสมือนเพื่อแชร์ในห้องนี้ !
               </div>
-              <Table definition unstackable striped celled>
+              <br></br>
+              {/* <Table definition unstackable striped celled>
                 <Table.Header>
                   <Table.Row>
                     <Table.HeaderCell />
@@ -173,7 +175,21 @@ export class VBrowserModal extends React.Component<{
                     </Table.Cell>
                   </Table.Row>
                 </Table.Body>
-              </Table>
+              </Table> */}
+              {canLaunch ? (
+                        this.state.isFreePoolFull ? (
+                          vmPoolFullMessage
+                        ) : (
+                          <LaunchButton large={false} />
+                        )
+                      ) : (
+                        <SignInButton fluid />
+                      )}
+                      {this.context.isSubscriber ? (
+                        <LaunchButton large />
+                      ) : (
+                        subscribeButton
+                      )}
             </Modal.Description>
           </Modal.Content>
         </Modal>

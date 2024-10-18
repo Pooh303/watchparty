@@ -8,6 +8,7 @@ jspm_packages/
 .pnp.js
 
 package-lock.json
+package.json
 
 .vscode/
 

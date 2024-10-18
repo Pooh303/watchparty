@@ -137,8 +137,8 @@ export class Controls extends React.Component<ControlsProps> {
         <Popup
           content={
             isBehind
-              ? 'Skip to the live stream position'
-              : "You're at the live stream position"
+              ? 'ข้ามไปยังตำแหน่งการสตรีมสด'
+              : "คุณอยู่ที่ตำแหน่งการสตรีมสด"
           }
           trigger={
             <div

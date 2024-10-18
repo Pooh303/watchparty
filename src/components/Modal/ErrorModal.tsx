@@ -18,7 +18,7 @@ export const ErrorModal = ({ error }: { error: string }) => {
           labelPosition="left"
         >
           <Icon name="home" />
-          Go to home page
+          กลับไปที่หน้าหลัก
         </Button>
       </div>
     </Modal>

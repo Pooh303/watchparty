@@ -10,22 +10,17 @@ export const Footer = () => (
       color: 'white',
     }}
   >
+    {' · '}
     <Link style={{ color: 'white' }} to="/terms">
-      Terms
+    ข้อกำหนด
     </Link>
     {' · '}
     <Link style={{ color: 'white' }} to="/privacy">
-      Privacy
+    ความเป็นส่วนตัว
     </Link>
     {' · '}
     <Link style={{ color: 'white' }} to="/faq">
-      FAQ
+    คำถามที่พบบ่อย
     </Link>
-    {' · '}
-    <Link style={{ color: 'white' }} to="/discordBot">
-      Discord Bot
-    </Link>
-    {' · '}
-    <span>Gravitech LLC</span>
   </div>
 );

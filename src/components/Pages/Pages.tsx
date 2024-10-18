@@ -10,36 +10,35 @@ export const Privacy = () => {
     <div style={mdStyle}>
       <ReactMarkdown>
         {`
-Privacy Policy
-====
+นโยบายความเป็นส่วนตัว  
+====  
 
-Rooms
-----
-- By default, rooms are temporary and expire after one day of inactivity.
-- Users have the option of making a room permanent, which can be undone at any time.
-- We do not keep logs of the content that users watch.
+ห้อง  
+----  
+- โดยค่าเริ่มต้น ห้องจะเป็นชั่วคราวและจะหมดอายุหลังจากหนึ่งวันของความไม่เคลื่อนไหว  
+- ผู้ใช้มีตัวเลือกในการทำให้ห้องเป็นถาวร ซึ่งสามารถยกเลิกได้ทุกเมื่อ  
+- เราจะไม่เก็บบันทึกเนื้อหาที่ผู้ใช้รับชม  
 
-Personal Information
-----
-- You are not required to register to use the service, but you have the option to sign in with an email or authentication provider, which will be used to display your name and picture in the rooms you join.
-- If you provide this information, we may use it to contact you regarding your use of the service, or to link your account to a subscription.
-- We do not sell personal information to third parties.
-- You have the right to request deletion of your user data, in accordance with various laws governing data protection. Please contact support@watchparty.me to request user data deletion.
-- Payment information is handled by providers such as Stripe. We do not collect or access financial information directly.
+ข้อมูลส่วนบุคคล  
+----  
+- คุณไม่จำเป็นต้องลงทะเบียนเพื่อใช้บริการ แต่คุณมีตัวเลือกในการลงชื่อเข้าใช้ด้วยอีเมลหรือผู้ให้บริการการตรวจสอบสิทธิ์ ซึ่งจะถูกใช้เพื่อแสดงชื่อและภาพของคุณในห้องที่คุณเข้าร่วม  
+- หากคุณให้ข้อมูลนี้ เราอาจใช้เพื่อ ติดต่อคุณเกี่ยวกับการใช้บริการของคุณ หรือเพื่อเชื่อมโยงบัญชีของคุณกับการสมัครสมาชิก  
+- เราจะไม่ขายข้อมูลส่วนบุคคลให้กับบุคคลที่สาม  
+- คุณมีสิทธิ์ขอให้ลบข้อมูลผู้ใช้ของคุณ ตามกฎหมายต่าง ๆ ที่ควบคุมการปกป้องข้อมูล กรุณาติดต่อ support@watchparty.me เพื่อขอให้ลบข้อมูลผู้ใช้  
+- ข้อมูลการชำระเงินจะถูกจัดการโดยผู้ให้บริการ เช่น Stripe เราจะไม่เก็บหรือเข้าถึงข้อมูลทางการเงินโดยตรง  
 
-Cookies
-----
-- We use services such as Google Analytics to measure usage. These services may set cookies or other information locally on your device.
+คุกกี้  
+----  
+- เราใช้บริการเช่น Google Analytics เพื่อวัดการใช้งาน บริการเหล่านี้อาจตั้งค่าคุกกี้หรือข้อมูลอื่น ๆ บนอุปกรณ์ของคุณ  
 
-Virtual Browsers
-----
-- Virtual machines are recycled after each session ends and any data on them is destroyed.
-- Your commands are encrypted while in-transit to the virtual machine.
+เบราว์เซอร์เสมือน  
+----  
+- เครื่องเสมือนจะถูกรีไซเคิลหลังจากแต่ละเซสชันสิ้นสุดและข้อมูลใด ๆ บนเครื่องจะถูกทำลาย  
+- คำสั่งของคุณจะถูกเข้ารหัสขณะส่งไปยังเครื่องเสมือน  
 
-YouTube
-----
-- The service provides the ability to search and play YouTube videos. Google/YouTube may use data provided to the search service in accordance with the [Google Privacy Policy](https://policies.google.com/privacy).
-`}
+YouTube  
+----  
+- บริการมีความสามารถในการค้นหาและเล่นวิดีโอ YouTube Google/YouTube อาจใช้ข้อมูลที่ให้ไว้กับบริการค้นหา ตาม [นโยบายความเป็นส่วนตัวของ Google](https://policies.google.com/privacy)`}
       </ReactMarkdown>
     </div>
   );
@@ -50,23 +49,22 @@ export const Terms = () => {
     <div style={mdStyle}>
       <ReactMarkdown>
         {`
-Terms of Service
-====
-By using this service you agree to the following terms:
-- You are over 13 years of age
-- Your use of the service may be terminated if you are found to be sharing illegal or infringing content
-- The service provides no guarantee of uptime or availability
-- You use the service at your own risk of encountering objectionable content, as we do not actively moderate rooms unless content is found to be illegal or infringing
+ข้อกำหนดในการให้บริการ  
+====  
+การใช้บริการนี้คุณตกลงตามข้อกำหนดดังต่อไปนี้:  
+- คุณอายุเกิน 13 ปี  
+- การใช้บริการของคุณอาจถูกยุติหากพบว่าคุณแชร์เนื้อหาที่ผิดกฎหมายหรือมีการละเมิด  
+- บริการนี้ไม่มีการรับประกันเวลาในการทำงานหรือการเข้าถึง  
+- คุณใช้บริการนี้โดยมีความเสี่ยงที่จะพบเนื้อหาที่ไม่เหมาะสม เนื่องจากเราไม่ทำการตรวจสอบห้องอย่างเข้มงวด เว้นแต่จะพบว่าเนื้อหานั้นผิดกฎหมายหรือมีการละเมิด  
 
-Subscriptions
-----
-- If you are dissatisfied with the service for any reason or believe you have been charged in error, please contact support@watchparty.me.
-- We will provide a full refund of the most recent payment, no questions asked.
+การสมัครสมาชิก  
+----  
+- หากคุณไม่พอใจกับบริการด้วยเหตุผลใดก็ตามหรือเชื่อว่าคุณถูกเรียกเก็บเงินโดยผิดพลาด กรุณาติดต่อ support@watchparty.me  
+- เราจะคืนเงินเต็มจำนวนสำหรับการชำระเงินล่าสุด โดยไม่ถามคำถามใด ๆ  
 
-YouTube
-----
-The service provides the ability to search and play YouTube videos. By using the YouTube search you agree to the [YouTube Terms of Service](https://www.youtube.com/t/terms).
-`}
+YouTube  
+----  
+บริการนี้มีความสามารถในการค้นหาและเล่นวิดีโอ YouTube โดยการใช้การค้นหา YouTube คุณตกลงตาม [ข้อกำหนดในการให้บริการของ YouTube](https://www.youtube.com/t/terms)`}
       </ReactMarkdown>
     </div>
   );
@@ -77,38 +75,36 @@ export const FAQ = () => {
     <div style={mdStyle}>
       <ReactMarkdown>
         {`
-FAQ
-====
-What's a VBrowser?
-----
-A virtual browser (VBrowser) is a browser running in the cloud that a room's members can connect to. Everyone in the room sees the same thing, so it's a great way to watch videos or collaborate on tasks together.
+คำถามที่พบบ่อย  
+====  
+VBrowser คืออะไร?  
+----  
+เบราว์เซอร์เสมือน (VBrowser) คือเบราว์เซอร์ที่รันอยู่บนคลาวด์ซึ่งสมาชิกในห้องสามารถเชื่อมต่อได้ ทุกคนในห้องจะเห็นสิ่งเดียวกัน ดังนั้นจึงเป็นวิธีที่ยอดเยี่ยมในการดูวิดีโอหรือทำงานร่วมกัน  
 
-Why did my VBrowser session stop?
-----
-VBrowsers will terminate automatically if no one is in the room for a while.
-VBrowser sessions are also limited to a maximum of 3 hours for free users, and 24 hours for subscribers.
+ทำไมเซสชัน VBrowser ของฉันถึงหยุดทำงาน?  
+----  
+VBrowser จะหยุดทำงานโดยอัตโนมัติหากไม่มีใครอยู่ในห้องเป็นระยะเวลาหนึ่ง  
+เซสชัน VBrowser ยังถูกจำกัดที่สูงสุด 3 ชั่วโมงสำหรับผู้ใช้ฟรี และ 24 ชั่วโมงสำหรับสมาชิก  
 
-Does everyone in the room need to be a subscriber to get the benefits?
-----
-No, only the person who created the VBrowser needs to be.
+ทุกคนในห้องต้องเป็นสมาชิกเพื่อรับประโยชน์ไหม?  
+----  
+ไม่, เพียงแค่ผู้ที่สร้าง VBrowser เท่านั้นที่ต้องเป็นสมาชิก  
 
-How do I access sites that have a "not available" message in the VBrowser?
-----
-Some sites may block traffic that's detected as coming from the cloud. You may need to install a VPN extension inside the virtual browser.
+ฉันจะเข้าถึงไซต์ที่แสดงข้อความ "ไม่สามารถใช้งานได้" ใน VBrowser ได้อย่างไร?  
+----  
+บางไซต์อาจบล็อกการเข้าถึงที่ตรวจพบว่ามาจากคลาวด์ คุณอาจต้องติดตั้งส่วนขยาย VPN ภายในเบราว์เซอร์เสมือน  
 
-How come I'm not getting any audio when screensharing?
-----
-To share audio, you must be using Chrome/Edge and sharing a tab or desktop.
+ทำไมฉันถึงไม่ได้ยินเสียงเมื่อแชร์หน้าจอ?  
+----  
+เพื่อแชร์เสียง คุณต้องใช้ Chrome/Edge และแชร์แท็บหรือหน้าจอเดสก์ท็อป  
 
-Is there a limit to how many people can be in a room?
-----
-Currently there isn't a hard limit, although the service hasn't been tested with more than 15 people or so. Screensharing and filesharing rely on one person uploading to everyone else, so it may not work well with large room sizes.
+มีขีดจำกัดจำนวนคนในห้องไหม?  
+----  
+ในขณะนี้ยังไม่มีขีดจำกัดที่แน่นอน แม้ว่าบริการจะไม่ได้ถูกทดสอบกับผู้ใช้มากกว่า 15 คนมากนัก การแชร์หน้าจอและการแชร์ไฟล์ขึ้นอยู่กับการอัปโหลดจากผู้ใช้คนหนึ่งไปยังทุกคน ดังนั้นอาจไม่ทำงานได้ดีในขนาดห้องที่ใหญ่  
 
-I own a website and I'd like to have a link that generates a WatchParty room with a specific video already set. How do I do this?
-----
-You can link to https://www.watchparty.me/create?video=URL_HERE to do this!
-
-`}
+ฉันเป็นเจ้าของเว็บไซต์และอยากได้ลิงก์ที่สร้างห้อง WatchParty พร้อมวิดีโอเฉพาะอยู่แล้ว ฉันจะทำอย่างไร?  
+----  
+คุณสามารถลิงก์ไปที่ https://www.watchparty.me/create?video=URL_HERE เพื่อทำเช่นนี้!`}
       </ReactMarkdown>
     </div>
   );

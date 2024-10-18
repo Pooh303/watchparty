@@ -14,18 +14,18 @@ export const ScreenShareModal = ({
   const subscribeButton = <SubscribeButton />;
   return (
     <Modal open={true} onClose={closeModal}>
-      <Modal.Header>Share Your Screen</Modal.Header>
+      <Modal.Header style={{ fontFamily: 'fonts' }}>แชร์หน้าจอ</Modal.Header>
       <Modal.Content image>
         <Modal.Description>
-          <div>You're about to share your screen.</div>
+          <div>คุณกำลังจะแชร์หน้าจออุปกรณ์ของคุณ !</div>
           <ul>
-            <li>This feature is only supported on Chrome and Edge.</li>
-            <li>
+            <li>ฟีเจอร์นี้รองรับแค่บน Chrome และ Edge</li>
+            {/* <li>
               Audio sharing only works if sharing your entire screen or a
               browser tab, not an application.
-            </li>
+            </li> */}
           </ul>
-          <Table definition unstackable striped celled>
+          {/* <Table definition unstackable striped celled>
             <Table.Header>
               <Table.Row>
                 <Table.HeaderCell />
@@ -90,7 +90,31 @@ export const ScreenShareModal = ({
                 </Table.Cell>
               </Table.Row>
             </Table.Body>
-          </Table>
+          </Table> */}
+          {isSubscriber ? (
+                    <Button
+                      color="orange"
+                      onClick={() => {
+                        startScreenShare(true);
+                        closeModal();
+                      }}
+                      style={{ fontFamily: 'fonts' }}
+                    >
+                      แชร์หน้าจอด้วย Relay
+                    </Button>
+                  ) : (
+                    subscribeButton
+                  )}
+          <Button
+                    onClick={() => {
+                      startScreenShare(false);
+                      closeModal();
+                    }}
+                    style={{ fontFamily: 'fonts' }}
+                  >
+                    แชร์หน้าจอ
+                  </Button>
+                  
         </Modal.Description>
       </Modal.Content>
     </Modal>

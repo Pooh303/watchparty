@@ -122,7 +122,7 @@ const ChatVideoCard: React.FC<{
               <Button
                 icon
                 color="green"
-                title="Play now"
+                title="เล่นตอนนี้"
                 onClick={handlePlayClick}
                 disabled={disabled}
               >
@@ -131,7 +131,7 @@ const ChatVideoCard: React.FC<{
               <Button
                 icon
                 color="black"
-                title="Play next"
+                title="เล่นถัดไป"
                 onClick={handlePlayNextClick}
                 disabled={disabled}
               >
@@ -140,7 +140,7 @@ const ChatVideoCard: React.FC<{
               <Button
                 icon
                 color="red"
-                title="Remove"
+                title="ลบ"
                 onClick={handleRemoveClick}
                 disabled={disabled}
               >

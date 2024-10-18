@@ -14,18 +14,18 @@ export class FileShareModal extends React.Component<{
     const subscribeButton = <SubscribeButton />;
     return (
       <Modal open={true} onClose={closeModal}>
-        <Modal.Header>Share A File</Modal.Header>
+        <Modal.Header style={{ fontFamily: 'fonts' }}>แชร์มีเดียไฟล์</Modal.Header>
         <Modal.Content image>
           <Modal.Description>
-            <div>You're about to share a file from your device.</div>
+            <div>คุณกำลังจะแชร์ไฟล์จากอุปกรณ์ของคุณ !</div>
             <ul>
-              <li>This feature is only supported on Chrome and Edge.</li>
-              <li>
+              <li>ฟีเจอร์นี้รองรับแค่บน Chrome และ Edge</li>
+              {/* <li>
                 Certain codecs such as AC3 aren't supported in Chrome (they work
                 in Edge due to licensing)
-              </li>
+              </li> */}
             </ul>
-            <Table definition unstackable striped celled>
+            {/* <Table definition unstackable striped celled>
               <Table.Header>
                 <Table.Row>
                   <Table.HeaderCell />
@@ -52,12 +52,12 @@ export class FileShareModal extends React.Component<{
                   <Table.Cell>{`< 1s`}</Table.Cell>
                 </Table.Row>
                 <Table.Row>
-                  <Table.Cell>Recommended Max Viewers</Table.Cell>
+                  <Table.Cell>Max Viewers</Table.Cell>
                   <Table.Cell>5</Table.Cell>
                   <Table.Cell>20</Table.Cell>
                 </Table.Row>
                 <Table.Row>
-                  <Table.Cell>Recommended Upload Speed</Table.Cell>
+                  <Table.Cell>Upload Speed</Table.Cell>
                   <Table.Cell>5 Mbps per viewer</Table.Cell>
                   <Table.Cell>5 Mbps</Table.Cell>
                 </Table.Row>
@@ -90,7 +90,26 @@ export class FileShareModal extends React.Component<{
                   </Table.Cell>
                 </Table.Row>
               </Table.Body>
-            </Table>
+            </Table> */}
+                    <Button
+                        color="orange"
+                        onClick={() => {
+                          this.props.startFileShare(true);
+                          this.props.closeModal();
+                        }}
+                        style={{ fontFamily: 'fonts' }}
+                      >
+                        แชร์มีเดียไฟล์ด้วย Relay
+                      </Button>
+                    <Button
+                      onClick={() => {
+                        this.props.startFileShare(false);
+                        this.props.closeModal();
+                      }}
+                      style={{ fontFamily: 'fonts' }}
+                    >
+                      แชร์มีเดียไฟล์
+                    </Button>
           </Modal.Description>
         </Modal.Content>
       </Modal>

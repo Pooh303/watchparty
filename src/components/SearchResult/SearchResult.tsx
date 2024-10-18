@@ -29,7 +29,7 @@ export const YouTubeSearchResult = (
               props.playlistAdd(e, { value: result.url });
             }}
           >
-            Add To Playlist
+            เพิ่มในคิว
           </Button>
         </div>
       </div>
