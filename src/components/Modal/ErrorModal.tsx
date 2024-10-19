@@ -7,7 +7,7 @@ export const ErrorModal = ({ error }: { error: string }) => {
       <Header as="h1" style={{ textAlign: 'center' }}>
         {error}
       </Header>
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', fontFamily: 'fonts' }}>
         <Button
           primary
           size="huge"

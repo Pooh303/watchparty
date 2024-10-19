@@ -288,11 +288,11 @@ export default class App extends React.Component<AppProps, AppState> {
         if (response.data.roomId) {
           roomId = response.data.roomId;
         } else {
-          this.setState({ overlayMsg: "Couldn't load this room." });
+          this.setState({ overlayMsg: "ไม่สามารถโหลดห้องได้" });
         }
       } catch (e) {
         console.error(e);
-        this.setState({ overlayMsg: "Couldn't load this room." });
+        this.setState({ overlayMsg: "ไม่สามารถโหลดห้องได้" });
         return;
       }
     }
@@ -340,21 +340,21 @@ export default class App extends React.Component<AppProps, AppState> {
     socket.on('connect_error', (err: any) => {
       console.error(err);
       if (err.message === 'Invalid namespace') {
-        this.setState({ overlayMsg: "Couldn't load this room." });
+        this.setState({ overlayMsg: "ไม่สามารถโหลดห้องได้" });
       } else if (err.message === 'not authorized') {
         this.setState({ isErrorAuth: true });
       } else if (err.message === 'room full') {
-        this.setState({ overlayMsg: 'This room is full.' });
+        this.setState({ overlayMsg: 'ห้องเต็ม' });
       }
     });
     socket.on('disconnect', (reason) => {
       if (reason === 'io server disconnect') {
         // the disconnection was initiated by the server, you need to reconnect manually
-        this.setState({ overlayMsg: 'Disconnected from server.' });
+        this.setState({ overlayMsg: 'หลุดจากการเชื่อมต่อเซิฟเวอร์' });
       } else {
         // else the socket will automatically try to reconnect
         // Use the alert pill since it's less disruptive
-        this.setState({ warningMessage: 'Reconnecting...' });
+        this.setState({ warningMessage: 'กำลังเชื่อมต่อใหม่ . . .' });
       }
     });
     socket.on('errorMessage', (err: string) => {
