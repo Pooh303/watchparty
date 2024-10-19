@@ -2198,7 +2198,7 @@ export default class App extends React.Component<AppProps, AppState> {
                             className="toolButton"
                             icon
                             labelPosition="left"
-                            style={{fontFamily: "fonts, sans-serif"}}
+                            style={{fontFamily: "fonts, sans-serif", borderRadius: '8px'}}
                             color="red"
                             onClick={this.stopPublishingLocalStream}
                             disabled={sharer?.id !== this.socket?.id}
