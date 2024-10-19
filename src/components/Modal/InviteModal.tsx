@@ -21,11 +21,13 @@ export const InviteModal = ({
         <Input
           fluid
           readOnly
+          style={{fontFamily:'fonts'}}
           action={{
             color: 'teal',
             labelPosition: 'right',
             icon: 'copy',
-            content: 'copy',            
+            style: { fontFamily: 'fonts' },
+            content: 'คัดลอก',            
             onClick: handleCopyInviteLink,
           }}
           defaultValue={window.location.href}

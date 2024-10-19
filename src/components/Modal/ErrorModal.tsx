@@ -7,7 +7,7 @@ export const ErrorModal = ({ error }: { error: string }) => {
       <Header as="h1" style={{ textAlign: 'center' }}>
         {error}
       </Header>
-      <div style={{ display: 'flex', justifyContent: 'center', fontFamily: 'fonts' }}>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
         <Button
           primary
           size="huge"
@@ -16,6 +16,7 @@ export const ErrorModal = ({ error }: { error: string }) => {
           }}
           icon
           labelPosition="left"
+          style={{fontFamily: 'fonts', borderRadius: '10px'}}
         >
           <Icon name="home" />
           กลับไปที่หน้าหลัก

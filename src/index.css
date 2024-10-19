@@ -129,3 +129,7 @@ button.linkButton {
 .content {
   font-family: 'fonts', sans-serif !important;
 }
+
+.ui.header{
+  font-family: 'fonts', sans-serif !important;
+}

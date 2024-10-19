@@ -231,7 +231,7 @@ export class VideoChat extends React.Component<VideoChatProps> {
     const ourStream = window.watchparty.ourStream;
     const videoRefs = window.watchparty.videoRefs;
     const videoChatContentStyle = {
-      height: participants.length < 3 ? 220 : 110,
+      height: participants.length < 3 ? 180 : 110,
       borderRadius: '15px',
       objectFit: 'contain' as any, // ObjectFit
     };
@@ -410,12 +410,12 @@ export class VideoChat extends React.Component<VideoChatProps> {
                     <div
                       style={{
                         position: 'absolute',
-                        bottom: '4px',
+                        bottom: '15px',
                         left: '0px',
                         width: '100%',
                         backgroundColor: 'rgba(0,0,0,0)',
                         color: 'white',
-                        borderRadius: '4px',
+                        borderRadius: '15px',
                         fontSize: '10px',
                         fontWeight: 700,
                         display: 'flex',

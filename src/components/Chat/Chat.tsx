@@ -261,6 +261,7 @@ export class Chat extends React.Component<ChatProps> {
                 bottom: 0,
                 display: 'block',
                 margin: '0 auto',
+                fontFamily:'fonts'
               }}
             >
               <Icon name='arrow circle down'></Icon>ไปที่ด้านล่าง

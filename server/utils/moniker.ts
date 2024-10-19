@@ -39,8 +39,8 @@ export function makeRoomName(shard: number | undefined) {
 }
 
 export function makeUserName() {
-  return `${capFirst(randomElement(adjectives))} ${capFirst(
-    randomElement(nouns),
+  return `${capFirst(randomElement(nouns))} ${capFirst(
+    randomElement(adjectives),
   )}`;
 }
 

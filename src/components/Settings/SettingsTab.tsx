@@ -160,8 +160,8 @@ export const SettingsTab = ({
       <SettingRow
         toggle
         icon={roomLock ? 'lock' : 'lock open'}
-        name={`ล็อกห้อง`}
-        description="เฉพาะผู้ที่ล็อกห้องเท่านั้นที่สามารถควบคุมวิดีโอได้"
+        name={`ล็อคห้อง`}
+        description="เฉพาะผู้ที่ล็อคห้องเท่านั้นที่สามารถควบคุมวิดีโอได้"
         checked={Boolean(roomLock)}
         disabled={disableLocking && disableOwning}
         onChange={(_e, data) => setRoomLock(Boolean(data.checked))}
