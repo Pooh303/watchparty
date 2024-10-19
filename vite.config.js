@@ -12,5 +12,6 @@ export default {
           cert: fs.readFileSync(process.env.SSL_CRT_FILE),
         }
       : null,
+      port: 80
   },
 };

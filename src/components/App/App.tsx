@@ -2220,7 +2220,9 @@ export default class App extends React.Component<AppProps, AppState> {
                                   icon
                                   labelPosition="left"
                                   color="blue"
-                                  style={{fontFamily: "fonts, sans-serif"}}
+                                  style={{fontFamily: "fonts, sans-serif",
+                                    borderRadius: '8px'
+                                  }}
                                   onClick={() => {
                                     this.setState({
                                       isScreenShareModalOpen: true,
@@ -2246,7 +2248,9 @@ export default class App extends React.Component<AppProps, AppState> {
                                   icon
                                   labelPosition="left"
                                   color="green"
-                                  style={{fontFamily: "fonts, sans-serif"}}
+                                  style={{fontFamily: "fonts, sans-serif",
+                                    borderRadius: '8px'
+                                  }}
                                   onClick={() => {
                                     this.setState({
                                       isVBrowserModalOpen: true,
@@ -2389,7 +2393,9 @@ export default class App extends React.Component<AppProps, AppState> {
                                   disabled={!this.haveLock()}
                                   icon
                                   labelPosition="left"
-                                  style={{fontFamily: "fonts, sans-serif"}}
+                                  style={{fontFamily: "fonts, sans-serif",
+                                    borderRadius: '8px'
+                                  }}
                                   onClick={() => {
                                     this.setState({
                                       isFileShareModalOpen: true,

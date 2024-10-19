@@ -70,7 +70,8 @@ export class NewRoomButton extends React.Component<{
             onClick={this.createRoom}
             className={this.props.size ? '' : 'toolButton'}
             style={{background: 'linear-gradient(to right, #2185D0, #2196F3)',
-              fontFamily: 'fonts, sans-serif'
+              fontFamily: 'fonts, sans-serif',
+              borderRadius: '10px'
             }}
             fluid
           >
@@ -151,7 +152,7 @@ export class SignInButton extends React.Component<SignInButtonProps> {
           content="ลงชื่อเข้าใช้งานระบบ"
           trigger={
             <Dropdown
-              style={{ height: '36px' }}
+              style={{ height: '36px', borderRadius: '10px' }}
               icon="sign in"
               labeled
               className="icon"
@@ -224,14 +225,14 @@ export class ListRoomsButton extends React.Component<{}> {
         labeled
         className="icon"
         button
-        text="My Rooms"
+        text="ห้องของฉัน"
         onClick={this.refreshRooms}
         scrolling
         pointing="top right"
       >
         <Dropdown.Menu>
           {this.state.rooms.length === 0 && (
-            <Dropdown.Item disabled>You have no permanent rooms.</Dropdown.Item>
+            <Dropdown.Item disabled>คุณไม่มีห้องแบบถาวร</Dropdown.Item>
           )}
           {this.state.rooms.map((room: any) => {
             return (

@@ -110,8 +110,9 @@ const ChatVideoCard: React.FC<{
                   e.nativeEvent.stopImmediatePropagation();
                   onPlaylistAdd(e, { value: video.url });
                 }}
+                style={{ fontFamily: 'fonts', margin: '10px', whiteSpace: 'nowrap' }}
               >
-                Add To Playlist
+                เพิ่มไปยังคิว
               </Button>
             </div>
           </div>

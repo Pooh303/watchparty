@@ -21,7 +21,8 @@ export const InviteButton = () => {
             className="toolButton"
             style={{ minWidth: '12em',
               background: 'linear-gradient(to right, #4CAF50, #8BC34A)',
-              fontFamily: 'fonts, sans-serif'
+              fontFamily: 'fonts, sans-serif',
+              borderRadius: '10px'
              }}
             onClick={() => setInviteModalOpen(true)}
           >

@@ -232,7 +232,7 @@ export class VideoChat extends React.Component<VideoChatProps> {
     const videoRefs = window.watchparty.videoRefs;
     const videoChatContentStyle = {
       height: participants.length < 3 ? 220 : 110,
-      borderRadius: '4px',
+      borderRadius: '15px',
       objectFit: 'contain' as any, // ObjectFit
     };
     const selfId = getAndSaveClientId();
@@ -253,16 +253,20 @@ export class VideoChat extends React.Component<VideoChatProps> {
               marginTop: '8px',
             }}
           >
-            <Button
-              fluid
-              title="Join Video Chat"
-              color={'purple'}
-              size="medium"
-              icon
-              labelPosition="left"
-              onClick={this.setupWebRTC}
-              style={{ fontFamily: 'fonts' }}
-            >
+           <Button
+            fluid
+            title="เข้าร่วมวิดีโอแชท"
+            size="medium"
+            icon
+            labelPosition="left"
+            onClick={this.setupWebRTC}
+            style={{
+              fontFamily: 'fonts',
+              borderRadius: '12px',
+              background: 'linear-gradient(60deg, purple, pink)',
+              color: 'white',
+            }}
+          >
               <Icon name="video" />
               {`เข้าร่วมวิดีโอแชท`}
             </Button>
@@ -282,7 +286,7 @@ export class VideoChat extends React.Component<VideoChatProps> {
               icon
               labelPosition="left"
               onClick={this.stopWebRTC}
-              style={{ fontFamily: 'fonts' }}
+              style={{ fontFamily: 'fonts', borderRadius: '12px' }}
             >
               <Icon name="external" />
               {`ออกจากวีดีแชท`}
@@ -302,7 +306,7 @@ export class VideoChat extends React.Component<VideoChatProps> {
                 icon
                 labelPosition="left"
                 onClick={this.toggleVideoWebRTC}
-                style={{ fontFamily: 'fonts' }}
+                style={{ fontFamily: 'fonts', borderRadius: '12px' }}
               >
                 <Icon name="video" />
                 {this.getVideoWebRTC() ? 'เปิด' : 'ปิด'}
@@ -314,7 +318,7 @@ export class VideoChat extends React.Component<VideoChatProps> {
                 icon
                 labelPosition="left"
                 onClick={this.toggleAudioWebRTC}
-                style={{ fontFamily: 'fonts' }}
+                style={{ fontFamily: 'fonts', borderRadius: '12px' }}
               >
                 <Icon
                   name={

@@ -43,7 +43,7 @@ export const UserMenu = ({
       <div className={styles.userMenuContent}>
         <Button.Group vertical labeled icon>
           <Button
-            content="Kick"
+            content="เตะ"
             negative
             icon="ban"
             onClick={async () => {

@@ -176,7 +176,13 @@ export class VBrowserModal extends React.Component<{
                   </Table.Row>
                 </Table.Body>
               </Table> */}
-              {canLaunch ? (
+              
+                      {this.context.isSubscriber ? (
+                        <LaunchButton large />
+                      ) : (
+                        subscribeButton
+                      )}
+                      {canLaunch ? (
                         this.state.isFreePoolFull ? (
                           vmPoolFullMessage
                         ) : (
@@ -184,11 +190,6 @@ export class VBrowserModal extends React.Component<{
                         )
                       ) : (
                         <SignInButton fluid />
-                      )}
-                      {this.context.isSubscriber ? (
-                        <LaunchButton large />
-                      ) : (
-                        subscribeButton
                       )}
             </Modal.Description>
           </Modal.Content>

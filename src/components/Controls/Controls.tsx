@@ -244,8 +244,8 @@ export class Controls extends React.Component<ControlsProps> {
           <Popup
             content={
               this.props.roomPlaybackRate === 0
-                ? 'Playing at a dynamic rate to keep you in sync'
-                : 'Playing at a manually selected rate'
+                ? 'เล่นด้วยอัตราแบบไดนามิกเพื่อให้คุณซิงค์กัน'
+                : 'เล่นด้วยอัตราที่เลือกเองแบบแมนนวล'
             }
             trigger={
               <Icon
