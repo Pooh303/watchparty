@@ -173,12 +173,13 @@ export class ProfileModal extends React.Component<{
               icon
               labelPosition="left"
               fluid
-              href="https://gravatar.com"
+              // href="https://gravatar.com"
               target="_blank"
               color="blue"
+              style={{ borderRadius: '8px', fontFamily: 'fonts' }}
             >
               <Icon name="image" />
-              Edit Gravatar
+              แก้ไขรูปโปรไฟล์
             </Button>
             <Button
               disabled={
@@ -189,11 +190,12 @@ export class ProfileModal extends React.Component<{
               fluid
               color="purple"
               onClick={this.verifyEmail}
+              style={{ borderRadius: '8px', fontFamily: 'fonts' }}
             >
               <Icon name="check circle" />
-              Verify Email
+              ยืนยันอีเมล
             </Button>
-            {this.context.isSubscriber && <ManageSubButton />}
+            {/* {this.context.isSubscriber && <ManageSubButton />} */}
             {this.state.linkedDiscord ? (
               <Button
                 icon
@@ -202,25 +204,27 @@ export class ProfileModal extends React.Component<{
                 color="red"
                 animated="fade"
                 onClick={this.deleteDiscord}
+                style={{ borderRadius: '8px', fontFamily: 'fonts' }}
               >
                 <Icon name="discord" />
-                Unlink Discord {this.state.linkedDiscord.accountname}#
+                ยกเลิกการเชื่อมต่อกับ Discord {this.state.linkedDiscord.accountname}#
                 {this.state.linkedDiscord.discriminator}
               </Button>
             ) : (
               <React.Fragment>
                 <Popup
-                  content="Link your Discord account to automatically receive your Subscriber role if you're subscribed"
+                  content="เชื่อมต่อบัญชีผู้ใช้กับ Discord"
                   trigger={
                     <Button
                       icon
                       labelPosition="left"
                       fluid
                       color="orange"
+                      style={{ borderRadius: '8px', fontFamily: 'fonts' }}
                       onClick={this.authDiscord}
                     >
                       <Icon name="discord" />
-                      Link Discord Account
+                      เชื่อมต่อกับบัญชี Discord
                     </Button>
                   }
                 />
@@ -232,24 +236,26 @@ export class ProfileModal extends React.Component<{
               labelPosition="left"
               fluid
               color="green"
+              style={{ borderRadius: '8px', fontFamily: 'fonts' }}
               onClick={this.resetPassword}
             >
               <Icon name="key" />
-              Reset Password
+              รีเซ็ทรหัสผ่าน
             </Button>
             <Button
               icon
               labelPosition="left"
               fluid
               color="red"
+              style={{ borderRadius: '8px', fontFamily: 'fonts' }}
               onClick={this.deleteAccountConfirm}
             >
               <Icon name="trash" />
-              Delete Account
+              ลบบัญชี
             </Button>
-            <Button icon labelPosition="left" onClick={this.onSignOut} fluid>
+            <Button icon labelPosition="left" style={{ borderRadius: '8px', fontFamily: 'fonts' }} onClick={this.onSignOut} fluid>
               <Icon name="sign out" />
-              Sign out
+              ออกจากระบบ
             </Button>
           </div>
         </Modal.Content>

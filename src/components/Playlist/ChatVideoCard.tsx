@@ -72,8 +72,8 @@ const ChatVideoCard: React.FC<{
           : undefined
       }
     >
-      <div className={classes.Wrapper}>
-        <div className={classes.ThumbnailWrapper}>
+      <div className={classes.Wrapper} >
+        <div className={classes.ThumbnailWrapper} style={{borderRadius:'8px'}}>
           {!!video.duration && (
             <div className={classes.DurationLabel}>
               {formatTimestamp(video.duration)}
@@ -84,6 +84,7 @@ const ChatVideoCard: React.FC<{
               className={classes.Thumbnail}
               src={video.img}
               alt={video.name}
+              style={{borderRadius:'8px'}}
             />
           )}
         </div>
@@ -110,7 +111,7 @@ const ChatVideoCard: React.FC<{
                   e.nativeEvent.stopImmediatePropagation();
                   onPlaylistAdd(e, { value: video.url });
                 }}
-                style={{ fontFamily: 'fonts', margin: '10px', whiteSpace: 'nowrap' }}
+                style={{ fontFamily: 'fonts', margin: '10px', whiteSpace: 'nowrap', backgroundColor: 'white' }}
               >
                 เพิ่มไปยังคิว
               </Button>

@@ -49,15 +49,14 @@ export class SubscribeModal extends React.Component<{
     const { closeSubscribe } = this.props;
     return (
       <Modal open={true} onClose={closeSubscribe}>
-        <Modal.Header>Subscribe to WatchParty Plus</Modal.Header>
+        <Modal.Header style={{fontFamily:"fonts"}}>สมัครสมาชิกพรีเมี่ยม</Modal.Header>
         <Modal.Content image>
           {/* <Image wrapped size='medium' src='https://react.semantic-ui.com/images/avatar/large/rachel.png' /> */}
           <Modal.Description>
             <div>
-              Subscriptions help us maintain the service and build new features!
-              Please consider supporting us if you're enjoying WatchParty.
+              สมัครสมาชิกเพื่อรับสิทธิพิเศษและการใช้งานฟีเจอร์เพิ่มเติม
             </div>
-            <Header>Features</Header>
+            {/* <Header>Features</Header>
             <Table definition unstackable striped celled>
               <Table.Header>
                 <Table.Row>
@@ -65,11 +64,11 @@ export class SubscribeModal extends React.Component<{
                   <Table.HeaderCell>WatchParty Free</Table.HeaderCell>
                   <Table.HeaderCell>WatchParty Plus</Table.HeaderCell>
                 </Table.Row>
-              </Table.Header>
+              </Table.Header> */}
 
-              <Table.Body>
+              {/* <Table.Body> */}
                 {/* Priority support */}
-                <Table.Row>
+                {/* <Table.Row>
                   <Table.Cell>
                     Synchronized watching, chat, screenshare
                   </Table.Cell>
@@ -84,13 +83,13 @@ export class SubscribeModal extends React.Component<{
                   <Table.Cell>Number of Permanent Rooms</Table.Cell>
                   <Table.Cell>1</Table.Cell>
                   <Table.Cell>20</Table.Cell>
-                </Table.Row>
+                </Table.Row> */}
                 {/* <Table.Row>
                   <Table.Cell>Max Room Capacity</Table.Cell>
                   <Table.Cell>20</Table.Cell>
                   <Table.Cell>100</Table.Cell>
                 </Table.Row> */}
-                <Table.Row>
+                {/* <Table.Row>
                   <Table.Cell>VBrowser Access</Table.Cell>
                   <Table.Cell>When capacity allows</Table.Cell>
                   <Table.Cell>Anytime</Table.Cell>
@@ -155,7 +154,7 @@ export class SubscribeModal extends React.Component<{
                   <Table.Cell>$5 / month</Table.Cell>
                 </Table.Row>
               </Table.Body>
-            </Table>
+            </Table> */}
             <div style={{ textAlign: 'right' }}>
               {/* if user isn't logged in, provide login prompt */}
               {this.context.user && this.context.user.email ? (
@@ -171,7 +170,7 @@ export class SubscribeModal extends React.Component<{
                 </Button>
               ) : (
                 <div>
-                  Please sign in to subscribe: <SignInButton />
+                  กรุณาล็อกอินเข้าสู่ระบบ: <SignInButton />
                 </div>
               )}
             </div>

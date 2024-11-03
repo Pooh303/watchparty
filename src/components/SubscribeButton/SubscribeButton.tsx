@@ -7,7 +7,8 @@ import { MetadataContext } from '../../MetadataContext';
 export const SubscribeButton = () => {
   const { isSubscriber } = useContext(MetadataContext);
   const [isSubscribeModalOpen, setIsSubscribeModalOpen] = useState(false);
-  if (isSubscriber) {
+  // if (isSubscriber) {
+  if (true) {
     return null;
   }
   return (
@@ -16,18 +17,19 @@ export const SubscribeButton = () => {
         <SubscribeModal closeSubscribe={() => setIsSubscribeModalOpen(false)} />
       )}
       <Popup
-        content="Subscribe to help support us and enable additional features!"
+        content="สมัครสมาชิกเพื่อรับการใช้งานฟีเจอร์พิเศษ"
         trigger={
           <Button
             fluid
             color="orange"
             className="toolButton"
+            style={{ borderRadius: '10px', fontFamily: 'fonts' }}
             icon
             labelPosition="left"
             onClick={() => setIsSubscribeModalOpen(true)}
           >
             <Icon name="plus" />
-            Subscribe
+            สมัครสมาชิก
           </Button>
         }
       />

@@ -17,11 +17,11 @@ export const YouTubeSearchResult = (
         setMedia(e, { value: result.url });
       }}
     >
-      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-        <img style={{ height: '50px' }} src={result.img} alt={result.name} />
+      <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+        <img style={{ height: '50px', borderRadius: '10px !important' }} src={result.img} alt={result.name} />
         <Icon color="red" size="large" name="youtube" />
         <div>{decodeEntities(result.name)}</div>
-        <div style={{ marginLeft: 'auto' }}>
+        <div style={{ marginLeft: 'auto', borderRadius: '10px' }}>
           <Button
             onClick={(e) => {
               e.stopPropagation();

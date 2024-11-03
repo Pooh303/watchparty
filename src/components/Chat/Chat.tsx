@@ -401,7 +401,7 @@ const ChatMessage = ({
       {id ? (
         <Popup
           content="WatchParty Plus subscriber"
-          disabled={!isSub}
+          disabled={isSub}
           trigger={
             <Comment.Avatar
               className={isSub ? classes.subscriber : ''}

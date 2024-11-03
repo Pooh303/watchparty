@@ -220,7 +220,7 @@ export class ListRoomsButton extends React.Component<{}> {
   render() {
     return (
       <Dropdown
-        style={{ height: '36px' }}
+        style={{ height: '36px', borderRadius: '10px', background: 'linear-gradient(90deg, orange, red)', color: 'white' }}
         icon="group"
         labeled
         className="icon"
@@ -232,7 +232,7 @@ export class ListRoomsButton extends React.Component<{}> {
       >
         <Dropdown.Menu>
           {this.state.rooms.length === 0 && (
-            <Dropdown.Item disabled>คุณไม่มีห้องแบบถาวร</Dropdown.Item>
+            <Dropdown.Item disabled>คุณยังไม่มีห้อง</Dropdown.Item>
           )}
           {this.state.rooms.map((room: any) => {
             return (
